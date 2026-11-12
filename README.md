@@ -2,7 +2,7 @@
 
 ### Technical Writing Laboratory | MNIT Jaipur
 
-> Write clearly. Document effectively. Collaborate confidently
+> **Write clearly. Document effectively. Collaborate confidently**
 
 This repository brings together my Technical Writing coursework,
 covering document preparation, presentations, source-code documentation,
