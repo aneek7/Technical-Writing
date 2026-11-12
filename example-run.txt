@@ -1,0 +1,3 @@
+Assistant-run example; inputs: 12, 8
+Enter first number: Enter second number: Sum: 20
+Product: 96

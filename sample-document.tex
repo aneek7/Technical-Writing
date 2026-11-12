@@ -1,0 +1,143 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Technical Writing: LaTeX Demonstration}
+\author{Aneek Chakraborty}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+LaTeX is a document preparation system used for
+structured technical and scientific writing.
+
+This document demonstrates \textbf{bold text},
+\textit{italic text}, and
+\textcolor{blue}{coloured text}.
+
+\subsection{Learning Objectives}
+
+\begin{itemize}
+    \item Organise a document using sections.
+    \item Typeset mathematical expressions.
+    \item Create tables and figures.
+    \item Use automatic cross-references.
+\end{itemize}
+
+\section{Mathematical Expressions}
+
+Inline mathematics fits within a sentence:
+\( a^2+b^2=c^2 \).
+
+A numbered equation appears separately:
+
+\begin{equation}
+    \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+    \label{eq:sum}
+\end{equation}
+
+Equation~\eqref{eq:sum} gives the sum of the first
+\(n\) positive integers.
+
+A matrix:
+
+\[
+A =
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}
+\]
+
+A piecewise function:
+
+\[
+f(x)=
+\begin{cases}
+-x, & x<0,\\
+x, & x\geq 0.
+\end{cases}
+\]
+
+\section{Tables}
+
+Table~\ref{tab:tools} compares three tools.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Technical Writing Tools}
+    \label{tab:tools}
+
+    \begin{tabular}{|l|p{7cm}|}
+        \hline
+        \rowcolor{blue!15}
+        \textbf{Tool} & \textbf{Purpose} \\
+        \hline
+        LaTeX & Preparing technical documents \\
+        \hline
+        Beamer & Creating presentations \\
+        \hline
+        Doxygen & Generating source-code documentation \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{Figures}
+
+Figure~\ref{fig:workflow} is drawn using the
+picture environment, without an external image.
+
+\begin{figure}[htbp]
+    \centering
+    \setlength{\unitlength}{1mm}
+    \begin{picture}(110,25)
+        \put(0,5){\framebox(30,15){Source}}
+        \put(30,12){\vector(1,0){10}}
+        \put(40,5){\framebox(30,15){Compile}}
+        \put(70,12){\vector(1,0){10}}
+        \put(80,5){\framebox(30,15){PDF}}
+    \end{picture}
+    \caption{LaTeX compilation workflow}
+    \label{fig:workflow}
+\end{figure}
+
+\section{Compilation Procedure}
+
+\begin{enumerate}
+    \item Write and save the LaTeX source.
+    \item Compile using pdfLaTeX.
+    \item Check the output for errors.
+    \item Compile again if references need updating.
+\end{enumerate}
+
+\noindent
+\fbox{\parbox{0.9\linewidth}{
+    \textbf{Key point:}
+    The source file contains commands and content.
+    The compiled PDF displays the formatted document.
+}}
+
+\section{Conclusion}
+
+LaTeX provides consistent formatting and automatic
+numbering for structured documents.
+The LaTeX Project provides further information
+\cite{latexproject}.
+
+\begin{thebibliography}{9}
+    \bibitem{latexproject}
+    The LaTeX Project.
+    \url{https://www.latex-project.org/}
+\end{thebibliography}
+
+\end{document}

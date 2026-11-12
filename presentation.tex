@@ -1,0 +1,80 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usetheme{Madrid}
+\setbeamertemplate{navigation symbols}{}
+
+\title{Introduction to LaTeX}
+\subtitle{Technical Writing Laboratory}
+\author{Aneek Chakraborty}
+\institute{MNIT Jaipur}
+\date{\today}
+
+\begin{document}
+
+% Slide 1
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Slide 2
+\begin{frame}{What Is LaTeX?}
+    \begin{itemize}
+        \item A document preparation system built on TeX.
+        \item Uses commands to organise and format content.
+        \item Useful for technical reports and research papers.
+        \item Supports equations, tables, and cross-references.
+    \end{itemize}
+
+    \begin{block}{Document Workflow}
+        Write the source, compile it, and inspect the PDF.
+    \end{block}
+\end{frame}
+
+% Slide 3
+\begin{frame}{Examples from the Demonstration}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \textbf{Mathematics}
+            \[
+                \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+            \]
+
+            \[
+                A =
+                \begin{bmatrix}
+                    1 & 2 \\
+                    3 & 4
+                \end{bmatrix}
+            \]
+        \end{column}
+
+        \begin{column}{0.48\textwidth}
+            \textbf{Document Features}
+            \begin{itemize}
+                \item Sections and contents
+                \item Coloured tables
+                \item A workflow figure
+                \item Labels and references
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% Slide 4
+\begin{frame}{Conclusion}
+    \begin{itemize}
+        \item LaTeX provides consistent document formatting.
+        \item Beamer creates presentations using LaTeX.
+        \item Source files remain editable and reusable.
+    \end{itemize}
+
+    \begin{exampleblock}{Key Takeaway}
+        Clear structure helps communicate technical ideas.
+    \end{exampleblock}
+
+    \vfill
+    \centering
+    \textbf{Thank you!}
+\end{frame}
+
+\end{document}

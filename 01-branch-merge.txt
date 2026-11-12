@@ -1,0 +1,46 @@
+Assistant-run demonstration in an isolated Linux environment. Not a capture of the student laptop.
+
+$ git init -b main
+Initialized empty Git repository in /workspace/scratch/tw-evidence-repo/.git/
+
+$ git config user.name "TW Demonstration"
+
+$ git config user.email "demo@example.invalid"
+
+$ git status --short
+?? README.md
+
+$ git add README.md
+
+$ git commit -m "Add practice README"
+[main (root-commit) 9a72a81] Add practice README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+$ git switch -c feature
+Switched to a new branch 'feature'
+
+$ git add note.txt
+
+$ git commit -m "Add feature note"
+[feature 39b5876] Add feature note
+ 1 file changed, 1 insertion(+)
+ create mode 100644 note.txt
+
+$ git switch main
+Switched to branch 'main'
+
+$ git merge feature
+Updating 9a72a81..39b5876
+Fast-forward
+ note.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 note.txt
+
+$ git log --oneline --all --graph
+* 39b5876 Add feature note
+* 9a72a81 Add practice README
+
+$ git status
+On branch main
+nothing to commit, working tree clean

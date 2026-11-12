@@ -1,0 +1,11 @@
+PROJECT_NAME = "TW Calculator"
+OUTPUT_DIRECTORY = generated-docs
+INPUT = examples/calculator.cpp
+FILE_PATTERNS = *.cpp
+EXTRACT_ALL = NO
+GENERATE_HTML = YES
+GENERATE_LATEX = YES
+HAVE_DOT = NO
+SOURCE_BROWSER = YES
+QUIET = YES
+WARN_LOGFILE = doxygen-warnings.log
