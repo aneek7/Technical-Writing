@@ -1,6 +1,23 @@
 # ⚙️ Doxygen — Source-Code Documentation
 
-### Technical Writing Laboratory | MNIT Jaipur
+### 🖼️ Generated Documentation Preview
+
+![Rendered class reference](screenshots/02-class-reference.png)
+
+This is a print-rendered view of the generated HTML, not a browser-session screenshot.
+
+## 🧪 Runnable Example and Generated Output
+
+- [Documented C++ source](examples/calculator.cpp)
+- [Doxyfile](Doxyfile)
+- [Captured sample run](example-run.txt)
+- [Download generated HTML and LaTeX sources](generated-documentation.zip)
+
+Extract `generated-documentation.zip` and open `generated-docs/html/index.html` locally; GitHub displays HTML source rather than serving the documentation interface. The HTML was generated with Doxygen 1.15.0. A [printable class reference](output/calculator-reference.pdf) is exported from the generated HTML. The ZIP also contains LaTeX sources. This is a standalone demonstration, not a replacement for the supplied multi-file lab assignment.
+
+To regenerate, run `doxygen Doxyfile` inside the Doxygen directory.
+
+## Technical Writing Laboratory | MNIT Jaipur
 
 > **Document the purpose. Explain the interface.**
 

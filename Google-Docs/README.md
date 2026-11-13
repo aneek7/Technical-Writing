@@ -1,6 +1,12 @@
 # 📄 Google Docs — Collaborative Technical Writing
 
-### Technical Writing Laboratory | MNIT Jaipur
+### 🧪 Prepared Sample Report
+
+[Open the report and import instructions](examples/README.md).
+
+This prepared example is ready to import into Google Docs. It does not claim that sharing, comments, or version-history exercises have been completed in a Google account.
+
+## Technical Writing Laboratory | MNIT Jaipur
 
 > **Write clearly. Collaborate effectively. Document professionally.**
 

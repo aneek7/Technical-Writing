@@ -1,6 +1,17 @@
 # 🎞️ Beamer — Academic Presentations
 
-### Technical Writing Laboratory | MNIT Jaipur
+### 🖼️ Output Preview
+
+![First page rendered from the compiled PDF](screenshots/01-preview.png)
+
+## 🧪 Open the Working Example
+
+- [Editable presentation source](examples/presentation.tex)
+- [Compiled four-slide PDF](output/presentation.pdf)
+
+Compare each `frame` in the source with the corresponding PDF slide.
+
+## Technical Writing Laboratory | MNIT Jaipur
 
 > **Organise ideas. Present clearly.**
 

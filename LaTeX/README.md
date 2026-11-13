@@ -1,6 +1,17 @@
 # 📝 LaTeX — Technical Document Preparation
 
-### Technical Writing Laboratory | MNIT Jaipur
+### 🖼️ Output Preview
+
+![First page rendered from the compiled PDF](screenshots/01-preview.png)
+
+## 🧪 Open the Working Example
+
+- [Editable LaTeX source](examples/sample-document.tex)
+- [Compiled document PDF](output/sample-document.pdf)
+
+Compare the equation, table, and figure commands with their rendered output.
+
+## Technical Writing Laboratory | MNIT Jaipur
 
 > **Structure the content. Typeset with precision.**
 

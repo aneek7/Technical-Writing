@@ -1,6 +1,16 @@
 # 🌿 Git — Version Control and Command Reference
 
-### Technical Writing Laboratory | MNIT Jaipur
+### 💻 Practical Exercises
+
+[Follow the step-by-step Git exercises](practical-exercises.md) — commands, expected results, screenshots to capture, and viva answers.
+
+### 🧪 Executed Demonstration
+
+[Open the command transcript and rendered preview](evidence/README.md).
+
+The linked reference example was executed in an isolated Linux environment. Repeat it in Git Bash to practise.
+
+## Technical Writing Laboratory | MNIT Jaipur
 
 > **Track changes. Understand history. Collaborate confidently.**
 
