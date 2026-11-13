@@ -1,352 +1,289 @@
-# 🎞️ Beamer — Academic Presentations
+# 📄 Google Docs — Collaborative Technical Writing
 
-### 🖼️ Output Preview
+### 🧪 Prepared Sample Report
 
-![First page rendered from the compiled PDF](screenshots/01-preview.png)
+[Open the report and import instructions](examples/README.md).
 
-## 🧪 Open the Working Example
-
-- [Editable presentation source](examples/presentation.tex)
-- [Compiled four-slide PDF](output/presentation.pdf)
-
-Compare each `frame` in the source with the corresponding PDF slide.
+This prepared example is ready to import into Google Docs. It does not claim that sharing, comments, or version-history exercises have been completed in a Google account.
 
 ## Technical Writing Laboratory | MNIT Jaipur
 
-> **Organise ideas. Present clearly.**
+> **Write clearly. Collaborate effectively. Document professionally.**
 
 ## 📌 Introduction
 
-Beamer is a LaTeX document class for creating presentations.
-It supports structured slides, mathematical expressions, themes,
-blocks, columns, and overlays.
+Google Docs is a web-based word processor used to create,
+edit, format, and share documents.
 
-The source is saved as a `.tex` file and compiled into a PDF presentation.
+It supports collaborative writing through shared access,
+comments, suggestions, and version history.
+
+In technical writing, it can be used for reports, project proposals,
+meeting minutes, and other shared documentation.
 
 ## 🎯 Learning Objectives
 
-- Create a presentation using the `beamer` document class.
-- Organise content into frames.
-- Add a title slide and presentation metadata.
-- Display lists, equations, and highlighted blocks.
-- Use themes and arrange content in columns.
-- Reveal content progressively using overlays.
+- Create and organise a technical document.
+- Apply consistent headings and text formatting.
+- Insert tables, images, links, and equations.
+- Share documents with appropriate permissions.
+- Review content using comments and suggestions.
+- Inspect earlier changes using version history.
+- Download documents in suitable formats.
 
-## 🏗️ Basic Structure
+## 📝 Creating a Document
 
-```latex
-\documentclass{beamer}
-\usetheme{Madrid}
+1. Open Google Docs.
+2. Create a blank document.
+3. Give the document a meaningful name.
+4. Add a title and section headings.
+5. Write and format the content.
+6. Review the document before sharing or downloading.
 
-\title{Introduction to LaTeX}
-\author{Student Name}
-\institute{MNIT Jaipur}
-\date{\today}
+Example document title:
 
-\begin{document}
+**Technical Writing — Laboratory Report**
 
-\begin{frame}
-    \titlepage
-\end{frame}
+## 🏗️ Document Structure
 
-\begin{frame}{Introduction}
-    LaTeX helps prepare structured technical documents.
-\end{frame}
+A clear technical report can use the following structure:
 
-\end{document}
-```
-
-| Command | Purpose |
+| Section | Purpose |
 | :--- | :--- |
-| `\documentclass{beamer}` | Creates a Beamer presentation |
-| `\usetheme{Madrid}` | Selects the presentation theme |
-| `\title{...}` | Sets the presentation title |
-| `\author{...}` | Sets the author |
-| `\institute{...}` | Sets the institution |
-| `\date{\today}` | Uses the compilation date |
-| `\titlepage` | Displays the title information |
-| `\begin{frame}{Title}` | Starts a frame with a title |
+| Title | Identifies the document |
+| Introduction | Explains the topic and context |
+| Objectives | States what the work aims to achieve |
+| Method or Procedure | Describes the steps followed |
+| Results | Presents outputs and observations |
+| Conclusion | Summarises the findings |
+| References | Acknowledges sources |
 
-## 🖥️ Frames and Slides
+Use built-in heading styles rather than only making text
+larger or bold.
 
-A **frame** is a logical unit of presentation content.
+Heading styles establish a document hierarchy and support
+navigation and an automatic table of contents.
 
-A simple frame produces one PDF slide. A frame with overlays
-can produce multiple PDF slides that reveal content progressively.
+## ✍️ Formatting Features
 
-```latex
-\begin{frame}{Advantages of LaTeX}
-    \begin{itemize}
-        \item Consistent formatting
-        \item Mathematical typesetting
-        \item Automatic cross-references
-    \end{itemize}
-\end{frame}
-```
-
-## 🎨 Themes
-
-Themes control the visual appearance of a presentation.
-
-```latex
-\usetheme{Madrid}
-```
-
-Other examples include `Berlin`, `CambridgeUS`, and `Boadilla`.
-Choose one theme for the presentation.
-
-A colour theme can be selected separately:
-
-```latex
-\usecolortheme{dolphin}
-```
-
-For a widescreen presentation:
-
-```latex
-\documentclass[aspectratio=169]{beamer}
-```
-
-## 📋 Lists and Progressive Reveal
-
-### Numbered List
-
-```latex
-\begin{frame}{Document Preparation}
-    \begin{enumerate}
-        \item Write the source.
-        \item Compile the document.
-        \item Inspect the PDF.
-    \end{enumerate}
-\end{frame}
-```
-
-### Using Pause
-
-```latex
-\begin{frame}{Workflow}
-    Write the source.
-    \pause
-
-    Compile the document.
-    \pause
-
-    Review the output.
-\end{frame}
-```
-
-### Overlay Specifications
-
-```latex
-\begin{frame}{Key Features}
-    \begin{itemize}
-        \item<1-> Structured content
-        \item<2-> Consistent formatting
-        \item<3-> Mathematical expressions
-    \end{itemize}
-\end{frame}
-```
-
-`<2->` means the item appears from overlay 2 onward.
-
-## 💡 Blocks
-
-Blocks visually group important information.
-
-```latex
-\begin{frame}{Important Concepts}
-
-    \begin{block}{Definition}
-        Beamer is a LaTeX class for presentations.
-    \end{block}
-
-    \begin{alertblock}{Remember}
-        Keep slide content concise and readable.
-    \end{alertblock}
-
-    \begin{exampleblock}{Example}
-        Use Beamer for a technical seminar.
-    \end{exampleblock}
-
-\end{frame}
-```
-
-| Environment | Purpose |
+| Feature | Use in technical writing |
 | :--- | :--- |
-| `block` | General information |
-| `alertblock` | Emphasised information |
-| `exampleblock` | Examples |
+| Title and heading styles | Organise sections consistently |
+| Bold and italic | Emphasise selected information |
+| Paragraph alignment | Arrange text appropriately |
+| Line and paragraph spacing | Improve readability |
+| Bulleted lists | Present related points |
+| Numbered lists | Present ordered steps |
+| Tables | Compare information systematically |
+| Headers and footers | Display recurring document information |
+| Page numbers | Help readers navigate longer documents |
 
-## ➗ Mathematics
+Some page-layout features depend on whether the document
+uses pages or pageless format.
 
-Beamer supports LaTeX mathematical notation.
+## 📊 Tables
 
-```latex
-\begin{frame}{Mathematical Example}
-    The sum of the first \(n\) positive integers is:
-    \[
-        \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
-    \]
-\end{frame}
-```
+Tables are useful for comparisons, observations, and results.
 
-## ↔️ Columns
+Example:
 
-Use columns to place content side by side.
+| Tool | Main purpose | Example use |
+| :--- | :--- | :--- |
+| LaTeX | Structured typesetting | Technical report |
+| Beamer | Presentations | Seminar slides |
+| Doxygen | Code documentation | API reference |
+| Google Docs | Collaborative writing | Team report |
 
-```latex
-\begin{frame}{LaTeX and Beamer}
-    \begin{columns}[T]
+### Good Table Practices
 
-        \begin{column}{0.48\textwidth}
-            \textbf{LaTeX Documents}
-            \begin{itemize}
-                \item Reports
-                \item Articles
-                \item Books
-            \end{itemize}
-        \end{column}
+- Use clear column headings.
+- Keep formatting consistent.
+- Avoid unnecessary merged cells.
+- Include units where relevant.
+- Keep entries concise and readable.
 
-        \begin{column}{0.48\textwidth}
-            \textbf{Beamer Presentations}
-            \begin{itemize}
-                \item Seminars
-                \item Project presentations
-                \item Lectures
-            \end{itemize}
-        \end{column}
+## 🖼️ Images, Links, and Equations
 
-    \end{columns}
-\end{frame}
-```
+### Images
 
-## 🖼️ Images
+Images can illustrate procedures, results, and concepts.
 
-```latex
-\begin{frame}{Illustration}
-    \centering
-    \includegraphics[
-        width=0.7\textwidth,
-        height=0.65\textheight,
-        keepaspectratio
-    ]{example-image.png}
-\end{frame}
-```
+- Choose readable images.
+- Preserve their proportions when resizing.
+- Add explanatory text where needed.
+- Acknowledge the source of externally obtained images.
 
-Replace `example-image.png` with an actual image in the project.
-Beamer loads the `graphicx` package automatically.
+### Links
 
-## 💻 Displaying Code
+Use descriptive link text so readers understand the destination.
 
-Frames containing a `verbatim` environment require the
-`fragile` option.
+For example, use **Project Repository** rather than **Click here**.
 
-```latex
-\begin{frame}[fragile]{A Simple LaTeX Command}
-\begin{verbatim}
-\textbf{Bold text}
-\end{verbatim}
-\end{frame}
-```
+### Equations
 
-## 🧪 Complete Four-Slide Example
+The equation editor supports mathematical expressions
+using symbols and structures such as fractions,
+superscripts, and subscripts.
 
-The report-and-presentation assignment asks for a short
-3–4-slide presentation supporting the LaTeX report.
+For documents dominated by complex mathematics,
+LaTeX may provide more precise typesetting control.
 
-This example contains a title slide, two content slides,
-and a concluding slide.
+## 🤝 Sharing and Permissions
 
-Save it as `presentation.tex`.
-Replace `Student Name` with your name.
+Sharing permissions determine what another person can do.
 
-```latex
-\documentclass[aspectratio=169]{beamer}
-\usetheme{Madrid}
-\setbeamertemplate{navigation symbols}{}
+| Role | Typical permission |
+| :--- | :--- |
+| Viewer | Read the document |
+| Commenter | Read and leave comments or suggestions |
+| Editor | Modify document content |
 
-\title{Introduction to LaTeX}
-\subtitle{Technical Writing Laboratory}
-\author{Student Name}
-\institute{MNIT Jaipur}
-\date{\today}
+Access can be restricted to selected people or configured
+through available link-sharing options.
 
-\begin{document}
+An organisation's account settings may limit sharing options.
 
-% Slide 1: Title
-\begin{frame}
-    \titlepage
-\end{frame}
+### Sharing Workflow
 
-% Slide 2: Introduction
-\begin{frame}{What Is LaTeX?}
-    \begin{itemize}
-        \item A document preparation system built on TeX.
-        \item Uses commands to express document structure.
-        \item Useful for reports and research papers.
-        \item Supports high-quality mathematical typesetting.
-    \end{itemize}
-\end{frame}
+1. Open the document's sharing controls.
+2. Add the intended collaborator or configure link access.
+3. Select an appropriate role.
+4. Confirm the sharing settings.
+5. Provide the collaborator with access to the document.
 
-% Slide 3: Features
-\begin{frame}{Features Demonstrated in the Report}
-    \begin{itemize}
-        \item Title page and abstract.
-        \item Chapters, sections, and subsections.
-        \item Custom margins and heading colours.
-        \item Headers containing document information.
-    \end{itemize}
+Use the minimum access needed for the task.
 
-    \begin{block}{Main Benefit}
-        Structured source helps maintain consistent formatting.
-    \end{block}
-\end{frame}
+## 💬 Comments and Suggestions
 
-% Slide 4: Conclusion
-\begin{frame}{Conclusion}
-    \begin{itemize}
-        \item LaTeX supports structured technical writing.
-        \item Beamer extends this workflow to presentations.
-        \item Concise slides help communicate ideas clearly.
-    \end{itemize}
+### Comments
 
-    \vfill
-    \centering
-    \textbf{Thank you!}
-\end{frame}
+Comments support discussion without directly changing
+the document's main text.
 
-\end{document}
-```
+They can be used to:
+- Ask for clarification.
+- Identify missing information.
+- Request a correction.
+- Discuss a specific passage.
 
-## ▶️ Compilation
+Resolve a comment once the issue has been addressed.
 
-Compile locally:
+### Suggesting
 
-```bash
-pdflatex presentation.tex
-```
+Suggesting mode proposes changes for review.
 
-Run again if references or navigation information need updating.
+An authorised editor can accept or reject the suggested edits.
 
-Alternatively, create a project in Overleaf, paste the source,
-and select **Recompile**.
+| Method | Effect |
+| :--- | :--- |
+| Editing | Changes the document directly |
+| Suggesting | Proposes changes for approval |
+| Commenting | Adds feedback or discussion |
 
-The resulting file is `presentation.pdf`.
+## 🕒 Version History
 
-## ✅ Presentation Checklist
+Version history helps inspect how a document has changed.
 
-- Use a clear title for each content frame.
-- Keep text brief and readable.
-- Use consistent colours and formatting.
-- Avoid overcrowding frames.
-- Check equations and image dimensions.
-- Inspect the compiled PDF before presenting.
+It can be used to:
+- Review earlier versions.
+- Identify recorded edits and contributors.
+- Name important versions.
+- Restore an earlier version when appropriate.
+
+Version history is useful for collaborative documents,
+but it serves a different workflow from Git's repository,
+branching, and merging system.
+
+## 👥 Collaborative Writing Workflow
+
+1. Agree on the document's purpose and audience.
+2. Create a shared outline.
+3. Assign sections to contributors.
+4. Draft content using consistent formatting.
+5. Review through comments and suggestions.
+6. Resolve feedback.
+7. Check references and overall consistency.
+8. Download or share the final document.
+
+## 🧪 Practical Exercise
+
+Create a document titled:
+
+**Technical Writing Tools — A Comparative Report**
+
+### Include These Elements
+
+| Element | Required content |
+| :--- | :--- |
+| Title | Report title |
+| Introduction | Purpose of technical writing tools |
+| Headings | Separate sections for selected tools |
+| Table | Comparison of LaTeX, Doxygen, and Google Docs |
+| Image | A relevant illustration or screenshot |
+| Link | A relevant documentation page |
+| Conclusion | Main findings |
+
+### Collaboration Practice
+
+With a willing collaborator:
+
+1. Share the document with an appropriate role.
+2. Add a comment to a specific passage.
+3. Propose a change using Suggesting mode.
+4. Review and accept or reject the suggestion.
+5. Resolve the comment after addressing it.
+6. Inspect the document's version history.
+
+If working alone, practise comments and suggestions yourself.
+Do not describe the exercise as multi-person collaboration
+unless another person actually participated.
+
+## 📤 Downloading the Document
+
+Common download formats include:
+
+| Format | Suitable use |
+| :--- | :--- |
+| PDF | Sharing a document with a fixed layout |
+| DOCX | Continuing work in compatible word processors |
+| Plain text | Exporting text without rich formatting |
+
+Inspect the downloaded file because layout can change
+when converting between document formats.
+
+## ⚖️ Strengths and Limitations
+
+| Strengths | Limitations |
+| :--- | :--- |
+| Convenient collaborative editing | Live collaboration depends on connectivity |
+| Comments and suggested edits | Complex typesetting may require another tool |
+| Accessible through a web browser | Features may depend on account settings |
+| Version history | Exported formatting may need checking |
+| Multiple download formats | Offline work requires prior setup |
+
+## ✅ Technical Writing Checklist
+
+- State the document's purpose clearly.
+- Use a logical heading hierarchy.
+- Keep terminology and formatting consistent.
+- Explain figures and tables.
+- Cite external information.
+- Review spelling and grammar.
+- Check sharing permissions.
+- Inspect the final downloaded document.
+
+## 💡 Key Takeaways
+
+- Google Docs supports shared document preparation and review.
+- Heading styles improve structure and navigation.
+- Comments discuss content; suggestions propose edits.
+- Permissions control how others interact with a document.
+- Version history helps review and recover earlier work.
 
 ## 📚 References
 
-- Technical Writing course materials, MNIT Jaipur.
-- Assignment 5: Report & Presentation.
-- Beamer package and documentation: https://ctan.org/pkg/beamer
+- Technical Writing slides: Doxygen & Google Docs, MNIT Jaipur.
+- Google Docs Help: https://support.google.com/docs/
 
 ---
 
